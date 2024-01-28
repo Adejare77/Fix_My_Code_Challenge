@@ -26,9 +26,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		*head = (*head)->next;
 		p++;
-		printf("The value of p is: %d\n", p);
 	}
-	printf("The final value of p is: %d\n", p);
 	if (p != index || (*head) == NULL)
 	{
 		*head = saved_head;
