@@ -2,13 +2,14 @@
 """
 Geometry
 """
+
+
 class square():
     """
     Square Geometry
     """
     width = 0
     height = 0
-
 
     def __init__(self, *args, **kwargs):
         """initialize given parameters"""
@@ -27,8 +28,8 @@ class square():
         """ prints the formatted Square"""
         return "{}/{}".format(self.width, self.width)
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     s = square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
