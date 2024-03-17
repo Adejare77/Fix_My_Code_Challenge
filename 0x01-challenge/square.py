@@ -1,12 +1,17 @@
 #!/usr/bin/python3
-
+"""
+Geometry
+"""
 class square():
-
+    """
+    Square Geometry
+    """
     width = 0
     height = 0
 
 
     def __init__(self, *args, **kwargs):
+        """initialize given parameters"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -15,9 +20,11 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
+        """ Finds the perimeter of a Square"""
         return (self.width * 2) + (self.width * 2)
 
     def __str__(self):
+        """ prints the formatted Square"""
         return "{}/{}".format(self.width, self.width)
 
 if __name__ == "__main__":
